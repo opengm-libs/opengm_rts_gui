@@ -1,0 +1,53 @@
+{
+    "build": {
+        "devPath": "../src",
+        "distDir": "../src",
+        "withGlobalTauri": true
+    },
+    "package": {
+        "productName": "随机性检测",
+        "version": "0.1.0"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": false,
+            "shell": {
+                "all": false,
+                "open": true
+            },
+            "dialog": {
+                "all": true, 
+                "ask": true, 
+                "confirm": true, 
+                "message": true, 
+                "open": true, 
+                "save": true
+            },
+            "path": {
+                "all": true
+            }
+        },
+        "windows": [
+            {
+                "title": "GM/T 0005-2021 随机性检测规范",
+                "width": 800,
+                "height": 600
+            }
+        ],
+        "security": {
+            "csp": null
+        },
+        "bundle": {
+            "active": true,
+            "targets": "all",
+            "identifier": "opengm-rts",
+            "icon": [
+                "icons/32x32.png",
+                "icons/128x128.png",
+                "icons/128x128@2x.png",
+                "icons/icon.icns",
+                "icons/icon.ico"
+            ]
+        }
+    }
+}
