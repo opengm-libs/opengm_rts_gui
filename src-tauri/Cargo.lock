@@ -1729,7 +1729,7 @@ dependencies = [
 
 [[package]]
 name = "opengm_rts_gui"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "opengm_rts",
  "serde",

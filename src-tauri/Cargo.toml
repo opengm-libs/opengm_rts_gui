@@ -1,6 +1,6 @@
 [package]
 name = "opengm_rts_gui"
-version = "0.1.0"
+version = "0.1.1"
 description = "Randomness test suite for GM/T 0005-2021"
 authors = ["opengm"]
 edition = "2021"
@@ -14,7 +14,7 @@ tauri-build = { version = "1", features = [] }
 tauri = { version = "1", features = [ "path-all", "dialog-all", "shell-open"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-opengm_rts = "0.1"
+opengm_rts = "0.1.4"
 
 [features]
 # This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!

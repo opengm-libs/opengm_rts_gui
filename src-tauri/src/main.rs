@@ -55,29 +55,29 @@ fn run_tests(sample_dir: &str) -> String {
     }
     s.push_str("</table>");
 
-    if pfailed_tests.len() > 0{
-        s.push_str("p_value tests failed: ");
-        for t in &pfailed_tests{
-            s.push_str(format!("{} ", t).as_str());
-        }
-        s.push_str("</br>");
-    }
-    if qfailed_tests.len() > 0{
-        s.push_str("q_value tests failed: ");
-        for t in &qfailed_tests{
-            s.push_str(format!("{} ", t).as_str());
-        }
-        s.push_str("</br>");
+    // if pfailed_tests.len() > 0{
+    //     s.push_str("p_value tests failed: ");
+    //     for t in &pfailed_tests{
+    //         s.push_str(format!("{} ", t).as_str());
+    //     }
+    //     s.push_str("</br>");
+    // }
+    // if qfailed_tests.len() > 0{
+    //     s.push_str("q_value tests failed: ");
+    //     for t in &qfailed_tests{
+    //         s.push_str(format!("{} ", t).as_str());
+    //     }
+    //     s.push_str("</br>");
 
-    }
+    // }
 
     if pfailed_tests.len() == 0 && pfailed_tests.len() == 0{
-        s.push_str("Randomness tests passed.</br>")
+        s.push_str("Randomness test PASS.</br>")
     }else{
-        s.push_str("Randomness tests failed.</br>")
+        s.push_str("Randomness test FAIL.</br>")
     }
-    s.push_str(format!("Randomness tests used time: {} seconds</br>",  (Instant::now() - start_time).as_secs()).as_str());
-    s.push_str("</br>By The OpenGM Group</br>");
+    s.push_str(format!("Randomness test used time: {} seconds</br>",  (Instant::now() - start_time).as_secs()).as_str());
+    s.push_str("</br>By the OpenGM Group</br>");
     s
 }
 
