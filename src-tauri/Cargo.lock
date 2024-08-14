@@ -1717,9 +1717,9 @@ dependencies = [
 
 [[package]]
 name = "opengm_rts"
-version = "0.1.3"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bdb8ecdf59e6c438e0740c4785e16f4b5ebfe8fd9d4d8e2985db629ee033abfb"
+checksum = "ec0b60173544dfc80927b0ad779c228e58a58cb1665766a6474206c2f4dbe72e"
 dependencies = [
  "libm",
  "rand 0.8.5",
