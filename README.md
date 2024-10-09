@@ -7,5 +7,5 @@
 - Build `cargo tauri build [--target=<target>]`
 
 ## 性能
-1000样本,每个样本100万比特,在M1 pro max下54秒完成.
+1000样本,每个样本100万比特,在M1 Max下10秒完成.
 ![performace](/perf.jpg)

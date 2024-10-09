@@ -16,7 +16,7 @@ fn run_tests(sample_dir: &str) -> String {
     let samples = samples.unwrap();
 
     let n = samples.len();
-    let bits = samples[0].bits();
+    let bits = samples[0].len();
     let w = waterline(ALPHA, samples.len()) as i32;
 
     let testers = get_testers(&ALL_TESTS_FUNCS, bits);

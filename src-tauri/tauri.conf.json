@@ -6,7 +6,7 @@
     },
     "package": {
         "productName": "随机性检测",
-        "version": "0.1.1"
+        "version": "0.2.1"
     },
     "tauri": {
         "allowlist": {
